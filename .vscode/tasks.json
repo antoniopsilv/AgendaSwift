@@ -1,0 +1,18 @@
+{
+    "version":"2.0.0",
+    "tasks":[
+       {
+          "label":"swift-build",
+          "type":"process",
+          "command":"cmd",
+          "args":[
+             "/C",
+             "swiftc ${file} -o ${fileDirname}/${fileBasenameNoExtension}.exe && ${fileDirname}\\${fileBasenameNoExtension}"
+          ],
+          "group":{
+             "kind":"build",
+             "isDefault":true
+          }
+       }
+    ]
+ }
